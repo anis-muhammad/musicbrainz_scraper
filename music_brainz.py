@@ -12,7 +12,7 @@ def driverinitialize():
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--incognito")
     driver=uc.Chrome(options=chrome_options)
-    # driver.set_page_load_timeout(100)
+    driver.set_page_load_timeout(100)
     return driver
 def data_scraper():
     driver = driverinitialize()
